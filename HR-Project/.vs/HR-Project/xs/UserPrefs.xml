@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{68FEF03A-2A16-4202-B106-0A2FBC4FDBE8}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Program.cs">
+    <Files>
+      <File FileName="Infrastructure/Persistance/Entities/BaseEntity.cs" Line="2" Column="11" />
+      <File FileName="Infrastructure/Persistance/Entities/Category.cs" Line="2" Column="26" />
+      <File FileName="Infrastructure/Persistance/Entities/Job.cs" Line="2" Column="26" />
+      <File FileName="Infrastructure/Persistance/Entities/Employee.cs" Line="10" Column="39" />
+      <File FileName="Infrastructure/Persistance/Contexts/HRDbContext.cs" Line="14" Column="40" />
+      <File FileName="Core/Domain/Entities/AppUser.cs" Line="8" Column="3" />
+      <File FileName="Core/Domain/Entities/AppRole.cs" Line="8" Column="3" />
+      <File FileName="Infrastructure/Persistance/DesignTimeDbContext.cs" Line="14" Column="53" />
+      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" Line="15" Column="180" />
+      <File FileName="Presentation/Presentation/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HR-Project" expanded="True" selected="True">
+            <Node name="Core" expanded="True">
+              <Node name="Domain" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Infrastructure" expanded="True">
+              <Node name="Persistance" expanded="True">
+                <Node name="Contexts" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Presentation" expanded="True">
+              <Node name="Presentation" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
