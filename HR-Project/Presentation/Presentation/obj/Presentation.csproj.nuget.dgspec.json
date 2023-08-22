@@ -25,7 +25,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Domain/Domain.csproj": {
+                "projectPath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Domain/Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -37,6 +41,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -142,6 +160,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Application/Application.csproj": {
+                "projectPath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Application/Application.csproj"
+              },
               "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Domain/Domain.csproj": {
                 "projectPath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Domain/Domain.csproj"
               }

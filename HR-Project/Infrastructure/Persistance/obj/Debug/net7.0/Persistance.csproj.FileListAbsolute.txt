@@ -15,3 +15,5 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Infrastructure/Persistance/bin/Debug/net7.0/Domain.pdb
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Infrastructure/Persistance/obj/Debug/net7.0/Persistance.csproj.CopyComplete
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Infrastructure/Persistance/obj/Debug/net7.0/Persistance.genruntimeconfig.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Infrastructure/Persistance/bin/Debug/net7.0/Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Infrastructure/Persistance/bin/Debug/net7.0/Application.pdb

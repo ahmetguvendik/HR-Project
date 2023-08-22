@@ -48,3 +48,6 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/Domain.pdb
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/Persistance.pdb
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/obj/Debug/net7.0/Presentation.csproj.CopyComplete
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/MediatR.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/MediatR.Contracts.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll

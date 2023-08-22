@@ -1,25 +1,40 @@
 ﻿<Properties StartupConfiguration="{68FEF03A-2A16-4202-B106-0A2FBC4FDBE8}|https">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Controllers/JobController.cs">
     <Files>
-      <File FileName="Infrastructure/Persistance/Entities/BaseEntity.cs" Line="2" Column="11" />
-      <File FileName="Infrastructure/Persistance/Entities/Category.cs" Line="2" Column="26" />
-      <File FileName="Infrastructure/Persistance/Entities/Job.cs" Line="2" Column="26" />
-      <File FileName="Infrastructure/Persistance/Entities/Employee.cs" Line="10" Column="39" />
-      <File FileName="Infrastructure/Persistance/Contexts/HRDbContext.cs" Line="14" Column="40" />
-      <File FileName="Core/Domain/Entities/AppUser.cs" Line="8" Column="3" />
-      <File FileName="Core/Domain/Entities/AppRole.cs" Line="8" Column="3" />
-      <File FileName="Infrastructure/Persistance/DesignTimeDbContext.cs" Line="14" Column="53" />
-      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" Line="15" Column="180" />
-      <File FileName="Presentation/Presentation/Program.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Login/index.html" />
+      <File FileName="Presentation/Presentation/Views/User/SignIn.cshtml" Line="70" Column="68" />
+      <File FileName="Presentation/Presentation/Controllers/UserController.cs" Line="61" Column="10" />
+      <File FileName="Presentation/Presentation/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Core/Application/CQRS/Commands/User/CreateUser/CreateUserCommandRequest.cs" Line="9" Column="45" />
+      <File FileName="Core/Application/CQRS/Commands/User/CreateUser/CreateUserCommandHandler.cs" Line="26" Column="59" />
+      <File FileName="Core/Application/CQRS/Commands/User/CreateUser/CreateUserCommandResponse.cs" Line="7" Column="45" />
+      <File FileName="Presentation/Presentation/Views/User/SignUp.cshtml" Line="68" Column="1" />
+      <File FileName="Core/Application/ServiceRegistration.cs" Line="9" Column="46" />
+      <File FileName="Presentation/Presentation/Program.cs" Line="30" Column="47" />
+      <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandRequest.cs" Line="10" Column="45" />
+      <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandResponse.cs" Line="9" Column="41" />
+      <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandHandler.cs" Line="55" Column="15" />
+      <File FileName="Presentation/Presentation/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" Line="25" Column="113" />
+      <File FileName="Core/Application/CQRS/Commands/User/SignOutUser/SignOutCommandRequest.cs" Line="6" Column="36" />
+      <File FileName="Core/Application/CQRS/Commands/User/SignOutUser/SignOutCommandResponse.cs" Line="1" Column="1" />
+      <File FileName="Core/Application/CQRS/Commands/User/SignOutUser/SignOutCommandHandler.cs" Line="23" Column="1" />
+      <File FileName="Presentation/Presentation/Controllers/JobController.cs" Line="13" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HR-Project" expanded="True" selected="True">
+          <Node name="HR-Project" expanded="True">
             <Node name="Core" expanded="True">
-              <Node name="Domain" expanded="True">
-                <Node name="Entities" expanded="True" />
+              <Node name="Application" expanded="True">
+                <Node name="CQRS" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="User" expanded="True">
+                      <Node name="SignOutUser" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
               </Node>
             </Node>
             <Node name="Infrastructure" expanded="True">
@@ -28,7 +43,14 @@
               </Node>
             </Node>
             <Node name="Presentation" expanded="True">
-              <Node name="Presentation" expanded="True" />
+              <Node name="Presentation" expanded="True">
+                <Node name="Controllers" expanded="True" />
+                <Node name="Views" expanded="True">
+                  <Node name="Job" selected="True" />
+                  <Node name="User" expanded="True" />
+                </Node>
+                <Node name="wwwroot" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

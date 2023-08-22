@@ -10,3 +10,6 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Application/obj/Debug/net7.0/refint/Application.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Application/obj/Debug/net7.0/Application.pdb
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Application/obj/Debug/net7.0/ref/Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Application/bin/Debug/net7.0/Domain.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Application/bin/Debug/net7.0/Domain.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Application/obj/Debug/net7.0/Application.csproj.CopyComplete
