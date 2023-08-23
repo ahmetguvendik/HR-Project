@@ -14,6 +14,10 @@
     <None Remove="CQRS\Commands\User\CreateUser\" />
     <None Remove="CQRS\Commands\User\LoginUser\" />
     <None Remove="CQRS\Commands\User\SignOutUser\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Services\" />
+    <None Remove="CQRS\Commands\Employee\" />
+    <None Remove="CQRS\Commands\Employee\CreateEmployee\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -23,6 +27,10 @@
     <Folder Include="CQRS\Commands\User\CreateUser\" />
     <Folder Include="CQRS\Commands\User\LoginUser\" />
     <Folder Include="CQRS\Commands\User\SignOutUser\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Services\" />
+    <Folder Include="CQRS\Commands\Employee\" />
+    <Folder Include="CQRS\Commands\Employee\CreateEmployee\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

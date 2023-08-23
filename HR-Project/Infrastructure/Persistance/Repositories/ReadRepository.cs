@@ -18,7 +18,7 @@ namespace Persistance.Repositories
 
         public IQueryable<T> GetAll()
         {
-            return Table;
+            return Table.AsNoTracking();
         }
 
         public async Task<T> GetById(string id)

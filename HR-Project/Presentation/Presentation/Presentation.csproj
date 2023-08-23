@@ -22,11 +22,13 @@
   <ItemGroup>
     <None Remove="Views\User\" />
     <None Remove="Views\Job\" />
+    <None Remove="Views\Employee\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\User\" />
     <Folder Include="wwwroot\Login\" />
     <Folder Include="Views\Job\" />
+    <Folder Include="Views\Employee\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\Login\css\main.css" />

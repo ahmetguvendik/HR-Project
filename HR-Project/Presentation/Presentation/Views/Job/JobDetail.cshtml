@@ -1,0 +1,10 @@
+﻿@using Domain.Entities
+@model Job
+
+<h1>@Model.JobName</h1>
+Level: <h5>@Model.Level</h5>
+Tur: <h5>@Model.Type</h5>
+<br />
+<h5>@Model.Description</h5>
+
+<th><a asp-action="ApplyJob" asp-controller="Employee" asp-route-id=@Model.Id>Basvur</a></th>  

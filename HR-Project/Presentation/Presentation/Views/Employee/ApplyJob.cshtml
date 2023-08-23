@@ -1,0 +1,57 @@
+﻿@using Application.CQRS.Commands.Employee.CreateEmployee
+@model CreateEmployeeCommandResponse
+
+<form asp-action="ApplyJob" asp-controller="Employee" method="post">
+    <input type="hidden" asp-for=@Model.JobId />
+    <div class="mb-3">
+        <label>
+            Isim:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.Name></span>
+        <input type="text" asp-for=@Model.Name class=form-control />
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <label>
+            Soyisim:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.SurName></span>
+        <input type="text" asp-for=@Model.SurName class=form-control />
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <label>
+            Baslik:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.Title></span>
+        <input type="text" asp-for=@Model.Title class=form-control />
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <label>
+            Aciklama:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.Description></span>
+        <input type="text" asp-for=@Model.Description class=form-control />
+    </div>
+
+    <br />
+
+    <div>
+
+        <button>
+            Gonder
+        </button>
+    </div>
+
+    <div>
+        @ViewBag.ErrorMessage
+    </div>
+
+</form>

@@ -1,0 +1,27 @@
+﻿@using Application.ViewModels
+@model IEnumerable<Job_Category_View_Model>
+
+<table class="mt-4 table table-hover">
+    <thead>
+        <tr>
+
+            
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <th>@item.JobName</th>
+                <th>@item.Level</th>
+                <th>@item.Type</th>
+                <th>@item.CategoryName</th>
+                <th><a asp-action="JobDetail" asp-controller="Job" asp-route-id=@item.JobId>Detay</a></th>  
+            </tr>
+        }
+
+    </tbody>
+
+</table>

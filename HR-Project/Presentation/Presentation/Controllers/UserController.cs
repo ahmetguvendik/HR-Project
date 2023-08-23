@@ -35,7 +35,7 @@ namespace Presentation.Controllers
             }
             else if (response.Role == "Member")
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("GetJob", "Job");
             }
 
             return View(response);

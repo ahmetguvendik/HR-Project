@@ -9,7 +9,8 @@ namespace Domain.Entities
 		public string Description { get; set; }	
 		public Category Category { get; set; }
 		public string CategoryId { get; set; }
-		public List<Employee> Employees { get; set; }	
+		public List<Employee> Employees { get; set; }
+	
 	}
 }
 

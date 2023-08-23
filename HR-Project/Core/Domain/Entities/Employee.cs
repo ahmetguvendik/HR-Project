@@ -7,7 +7,8 @@ namespace Domain.Entities
 		public string Surname { get; set; }
 		public string Title { get; set; }
 		public string Description { get; set; }
-		public List<Job> jobs { get; set; }	
+		public List<Job> jobs { get; set; }
+	
 	}
 }
 
