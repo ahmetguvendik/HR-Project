@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using Application.Repositories;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace Application.CQRS.Commands.Employee.CreateEmployee
 {
@@ -8,10 +10,12 @@ namespace Application.CQRS.Commands.Employee.CreateEmployee
 	{
         private readonly IEmployeeWriteRepository _employeeWriteRepository;
         private readonly IJobReadRepository _jobReadRepository;
-		public CreateEmployeeCommandHandler(IEmployeeWriteRepository employeeWriteRepository,IJobReadRepository jobReadRepository)
+        private readonly IEmployeeJobWriteRepository _employeeJobWriteRepository;
+		public CreateEmployeeCommandHandler(IEmployeeWriteRepository employeeWriteRepository,IJobReadRepository jobReadRepository, IEmployeeJobWriteRepository employeeJobWriteRepository)
 		{
             _employeeWriteRepository = employeeWriteRepository;
             _jobReadRepository = jobReadRepository;
+            _employeeJobWriteRepository = employeeJobWriteRepository;
 		}
 
         public async Task<CreateEmployeeCommandResponse> Handle(CreateEmployeeCommandRequest request, CancellationToken cancellationToken)
@@ -21,20 +25,12 @@ namespace Application.CQRS.Commands.Employee.CreateEmployee
             employee.Name = request.Name;
             employee.Surname = request.SurName;
             employee.Title = request.Title;
-            var job = await _jobReadRepository.GetById(request.JobId);
-            employee.jobs = new List<Domain.Entities.Job>()
-            {
-                new()
-                {
-                    JobName = job.JobName,
-                    Category = job.Category,
-                    Description = job.Description,
-                    Level = job.Level,
-                    Type = job.Type
-                   
-                }
-            };
             employee.Description = request.Description;
+            var emplooyeeJob = new Domain.Entities.EmployeeJob();
+            emplooyeeJob.Id = Guid.NewGuid().ToString();
+            emplooyeeJob.EmployeeId = employee.Id;
+            emplooyeeJob.JobId = request.JobId;
+            await _employeeJobWriteRepository.AddAsync(emplooyeeJob);
             await _employeeWriteRepository.AddAsync(employee);
             await _employeeWriteRepository.SaveAsync();
             return new CreateEmployeeCommandResponse()

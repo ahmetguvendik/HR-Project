@@ -11,7 +11,15 @@ namespace Persistance.Contexts
 
 		public DbSet<Category> Categories { get; set; }
 		public DbSet<Employee> Employees { get; set; }
-		public DbSet<Job> Jobs { get; set; }	
-	}
+		public DbSet<Job> Jobs { get; set; }
+        public DbSet<EmployeeJob> EmployeeJob { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+                builder.Entity<Employee>().HasMany(x => x.Jobs).WithMany(x => x.Employees).UsingEntity<EmployeeJob>();
+            base.OnModelCreating(builder);
+        }
+
+    }
 }
 

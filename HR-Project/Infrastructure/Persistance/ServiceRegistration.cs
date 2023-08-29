@@ -24,6 +24,8 @@ namespace Persistance
             collection.AddScoped<IJobReadRepository, JobReadRepository>();
             collection.AddScoped<IJobWriteRepository, JobWriteRepository>();
             collection.AddScoped<IJobCategoryService, JobCategoryService>();
+            collection.AddScoped<IEmployeeJobWriteRepository, EmployeeJobWriteRepository>();
+            collection.AddScoped<IEmployeeJobReadRepository, EmployeeJobReadRepository>();
         }
     }
 }
