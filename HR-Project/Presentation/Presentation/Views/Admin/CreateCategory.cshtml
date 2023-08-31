@@ -1,0 +1,26 @@
+﻿@using Application.CQRS.Commands.Category.CreateCategory
+@model CreateCategoryCommandResponse
+
+<form asp-action="CreateCategory" asp-controller="Admin" method="post">
+    <div class="mb-3">
+        <label>
+            Category Name:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.CategoryName></span>
+        <input type="text" asp-for=@Model.CategoryName class=form-control />
+    </div>
+
+    <br />
+
+    <div>
+
+        <button>
+            Gonder
+        </button>
+    </div>
+
+    <div>
+        @ViewBag.ErrorMessage
+    </div>
+
+</form>

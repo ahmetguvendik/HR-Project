@@ -1,15 +1,22 @@
 ﻿<Properties StartupConfiguration="{68FEF03A-2A16-4202-B106-0A2FBC4FDBE8}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Persistance/Contexts/HRDbContext.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandHandler.cs">
     <Files>
       <File FileName="Presentation/Presentation/Views/User/SignIn.cshtml" />
-      <File FileName="Presentation/Presentation/Controllers/UserController.cs" />
+      <File FileName="Presentation/Presentation/Controllers/UserController.cs" Line="34" Column="51" />
       <File FileName="Presentation/Presentation/Views/_ViewStart.cshtml" />
       <File FileName="Core/Application/CQRS/Commands/User/CreateUser/CreateUserCommandRequest.cs" />
       <File FileName="Core/Application/CQRS/Commands/User/CreateUser/CreateUserCommandHandler.cs" />
       <File FileName="Core/Application/CQRS/Commands/User/CreateUser/CreateUserCommandResponse.cs" />
-      <File FileName="Presentation/Presentation/Views/User/SignUp.cshtml" />
-      <File FileName="Core/Application/ServiceRegistration.cs" />
-      <File FileName="Presentation/Presentation/Program.cs" Line="11" Column="1" />
+      <File FileName="Presentation/Presentation/Views/User/SignUp.cshtml" Line="1" Column="1" />
+      <File FileName="Core/Application/ServiceRegistration.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Program.cs" />
       <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandRequest.cs" />
       <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandResponse.cs" />
       <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandHandler.cs" />
@@ -18,50 +25,59 @@
       <File FileName="Core/Application/CQRS/Commands/User/SignOutUser/SignOutCommandRequest.cs" />
       <File FileName="Core/Application/CQRS/Commands/User/SignOutUser/SignOutCommandResponse.cs" />
       <File FileName="Core/Application/CQRS/Commands/User/SignOutUser/SignOutCommandHandler.cs" />
-      <File FileName="Presentation/Presentation/Controllers/JobController.cs" />
-      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" Line="28" Column="62" />
+      <File FileName="Presentation/Presentation/Controllers/JobController.cs" Line="1" Column="1" />
+      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" />
       <File FileName="Presentation/Presentation/Views/Job/GetJob.cshtml" />
       <File FileName="Core/Application/ViewModels/Job_Category_View_Model.cs" />
-      <File FileName="Core/Domain/Entities/Job.cs" Line="12" Column="46" />
+      <File FileName="Core/Domain/Entities/Job.cs" />
       <File FileName="Core/Application/Services/IJobCategoryService.cs" />
       <File FileName="Infrastructure/Persistance/Services/JobCategoryService.cs" />
       <File FileName="Presentation/Presentation/Views/Job/JobDetail.cshtml" />
-      <File FileName="Presentation/Presentation/Views/Employee/ApplyJob.cshtml" />
+      <File FileName="Presentation/Presentation/Views/Employee/ApplyJob.cshtml" Line="19" Column="17" />
       <File FileName="Presentation/Presentation/Controllers/EmployeeController.cs" />
-      <File FileName="Core/Application/CQRS/Commands/Employee/CreateEmployee/CreateEmployeeCommandHandler.cs" Line="42" Column="38" />
+      <File FileName="Core/Application/CQRS/Commands/Employee/CreateEmployee/CreateEmployeeCommandHandler.cs" />
       <File FileName="Core/Application/CQRS/Commands/Employee/CreateEmployee/CreateEmployeeCommandRequest.cs" />
       <File FileName="Core/Application/CQRS/Commands/Employee/CreateEmployee/CreateEmployeeCommandResponse.cs" />
-      <File FileName="Core/Domain/Entities/Employee.cs" Line="15" Column="1" />
+      <File FileName="Core/Domain/Entities/Employee.cs" />
       <File FileName="Infrastructure/Persistance/Repositories/ReadRepository.cs" />
-      <File FileName="Infrastructure/Persistance/Contexts/HRDbContext.cs" Line="19" Column="117" />
-      <File FileName="Core/Domain/Entities/EmployeeJob.cs" Line="13" Column="1" />
-      <File FileName="Core/Application/Repositories/IEmployeeJobWriteRepository.cs" Line="5" Column="2" />
-      <File FileName="Core/Application/Repositories/IEmployeeJobReadRepository.cs" Line="6" Column="45" />
-      <File FileName="Core/Application/Repositories/IEmployeeReadRepository.cs" Line="6" Column="43" />
-      <File FileName="Core/Application/Repositories/IWriteRepository.cs" Line="1" Column="1" />
-      <File FileName="Core/Application/Repositories/IRepository.cs" Line="1" Column="1" />
-      <File FileName="Core/Application/Repositories/ICategoryReadRepository.cs" Line="1" Column="1" />
-      <File FileName="Core/Application/Repositories/IReadRepository.cs" Line="8" Column="3" />
-      <File FileName="Infrastructure/Persistance/Repositories/EmployeeJobWriteRepository.cs" Line="10" Column="73" />
-      <File FileName="Infrastructure/Persistance/Repositories/EmployeeReadRepository.cs" Line="1" Column="1" />
-      <File FileName="Infrastructure/Persistance/Repositories/CategoryWriteRepository.cs" Line="10" Column="70" />
-      <File FileName="Infrastructure/Persistance/Repositories/EmployeeJobReadRepository.cs" Line="16" Column="1" />
+      <File FileName="Infrastructure/Persistance/Contexts/HRDbContext.cs" />
+      <File FileName="Core/Domain/Entities/EmployeeJob.cs" />
+      <File FileName="Core/Application/Repositories/IEmployeeJobWriteRepository.cs" />
+      <File FileName="Core/Application/Repositories/IEmployeeJobReadRepository.cs" />
+      <File FileName="Core/Application/Repositories/IEmployeeReadRepository.cs" />
+      <File FileName="Core/Application/Repositories/IWriteRepository.cs" />
+      <File FileName="Core/Application/Repositories/IRepository.cs" />
+      <File FileName="Core/Application/Repositories/ICategoryReadRepository.cs" />
+      <File FileName="Core/Application/Repositories/IReadRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/EmployeeJobWriteRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/EmployeeReadRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/CategoryWriteRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/EmployeeJobReadRepository.cs" />
+      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" Line="55" Column="41" />
+      <File FileName="Presentation/Presentation/Views/Admin/CreateJob.cshtml" Line="58" Column="8" />
+      <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandRequest.cs" Line="8" Column="1" />
+      <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandResponse.cs" Line="10" Column="47" />
+      <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandHandler.cs" Line="33" Column="15" />
+      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategoryCommandRequest.cs" Line="4" Column="60" />
+      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategoryCommandResponse.cs" Line="6" Column="44" />
+      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategoryCommandHandler.cs" Line="5" Column="45" />
+      <File FileName="Presentation/Presentation/Views/Admin/CreateCategory.cshtml" Line="21" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HR-Project" expanded="True" selected="True">
+          <Node name="HR-Project" expanded="True">
             <Node name="Core" expanded="True">
               <Node name="Application" expanded="True">
                 <Node name="CQRS" expanded="True">
                   <Node name="Commands" expanded="True">
-                    <Node name="Employee" expanded="True">
-                      <Node name="CreateEmployee" expanded="True" />
+                    <Node name="Category" expanded="True">
+                      <Node name="CreateCategory" expanded="True">
+                        <Node name="CreateCategoryCommandHandler.cs" selected="True" />
+                      </Node>
                     </Node>
                   </Node>
                 </Node>
-                <Node name="Services" expanded="True" />
-                <Node name="ViewModels" expanded="True" />
               </Node>
               <Node name="Domain" expanded="True">
                 <Node name="Entities" expanded="True" />
@@ -70,23 +86,22 @@
             <Node name="Infrastructure" expanded="True">
               <Node name="Persistance" expanded="True">
                 <Node name="Contexts" expanded="True" />
-                <Node name="Repositories" expanded="True" />
                 <Node name="Services" expanded="True" />
               </Node>
             </Node>
             <Node name="Presentation" expanded="True">
-              <Node name="Presentation" expanded="True" />
+              <Node name="Presentation" expanded="True">
+                <Node name="Controllers" expanded="True" />
+                <Node name="Views" expanded="True">
+                  <Node name="Admin" expanded="True" />
+                  <Node name="Employee" expanded="True" />
+                  <Node name="User" expanded="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
 </Properties>

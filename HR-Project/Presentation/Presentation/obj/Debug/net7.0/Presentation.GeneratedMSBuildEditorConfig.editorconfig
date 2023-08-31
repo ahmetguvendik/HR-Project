@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/Views/Admin/CreateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ3JlYXRlQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/Views/Admin/CreateJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ3JlYXRlSm9iLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/Views/Employee/ApplyJob.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvQXBwbHlKb2IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

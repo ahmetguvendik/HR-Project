@@ -31,7 +31,7 @@ namespace Presentation.Controllers
             var response = await _mediator.Send(model);
             if (response.Role == "Admin")
             {
-                return RedirectToAction("GetCar", "Admin");
+                return RedirectToAction("CreateJob", "Admin");
             }
             else if (response.Role == "Member")
             {

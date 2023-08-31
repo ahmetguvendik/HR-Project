@@ -18,6 +18,10 @@
     <None Remove="Services\" />
     <None Remove="CQRS\Commands\Employee\" />
     <None Remove="CQRS\Commands\Employee\CreateEmployee\" />
+    <None Remove="CQRS\Commands\Job\" />
+    <None Remove="CQRS\Commands\Job\CreateJob\" />
+    <None Remove="CQRS\Commands\Category\" />
+    <None Remove="CQRS\Commands\Category\CreateCategory\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -31,6 +35,10 @@
     <Folder Include="Services\" />
     <Folder Include="CQRS\Commands\Employee\" />
     <Folder Include="CQRS\Commands\Employee\CreateEmployee\" />
+    <Folder Include="CQRS\Commands\Job\" />
+    <Folder Include="CQRS\Commands\Job\CreateJob\" />
+    <Folder Include="CQRS\Commands\Category\" />
+    <Folder Include="CQRS\Commands\Category\CreateCategory\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
