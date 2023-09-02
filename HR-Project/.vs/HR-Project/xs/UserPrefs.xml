@@ -6,62 +6,22 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Controllers/AdminController.cs">
     <Files>
-      <File FileName="Presentation/Presentation/Views/User/SignIn.cshtml" />
-      <File FileName="Presentation/Presentation/Controllers/UserController.cs" Line="34" Column="51" />
-      <File FileName="Presentation/Presentation/Views/_ViewStart.cshtml" />
-      <File FileName="Core/Application/CQRS/Commands/User/CreateUser/CreateUserCommandRequest.cs" />
-      <File FileName="Core/Application/CQRS/Commands/User/CreateUser/CreateUserCommandHandler.cs" />
-      <File FileName="Core/Application/CQRS/Commands/User/CreateUser/CreateUserCommandResponse.cs" />
-      <File FileName="Presentation/Presentation/Views/User/SignUp.cshtml" Line="1" Column="1" />
-      <File FileName="Core/Application/ServiceRegistration.cs" Line="1" Column="1" />
-      <File FileName="Presentation/Presentation/Program.cs" />
-      <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandRequest.cs" />
-      <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandResponse.cs" />
-      <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandHandler.cs" />
-      <File FileName="Presentation/Presentation/Controllers/HomeController.cs" />
-      <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" />
-      <File FileName="Core/Application/CQRS/Commands/User/SignOutUser/SignOutCommandRequest.cs" />
-      <File FileName="Core/Application/CQRS/Commands/User/SignOutUser/SignOutCommandResponse.cs" />
-      <File FileName="Core/Application/CQRS/Commands/User/SignOutUser/SignOutCommandHandler.cs" />
-      <File FileName="Presentation/Presentation/Controllers/JobController.cs" Line="1" Column="1" />
-      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" />
-      <File FileName="Presentation/Presentation/Views/Job/GetJob.cshtml" />
-      <File FileName="Core/Application/ViewModels/Job_Category_View_Model.cs" />
-      <File FileName="Core/Domain/Entities/Job.cs" />
-      <File FileName="Core/Application/Services/IJobCategoryService.cs" />
-      <File FileName="Infrastructure/Persistance/Services/JobCategoryService.cs" />
-      <File FileName="Presentation/Presentation/Views/Job/JobDetail.cshtml" />
-      <File FileName="Presentation/Presentation/Views/Employee/ApplyJob.cshtml" Line="19" Column="17" />
-      <File FileName="Presentation/Presentation/Controllers/EmployeeController.cs" />
-      <File FileName="Core/Application/CQRS/Commands/Employee/CreateEmployee/CreateEmployeeCommandHandler.cs" />
-      <File FileName="Core/Application/CQRS/Commands/Employee/CreateEmployee/CreateEmployeeCommandRequest.cs" />
-      <File FileName="Core/Application/CQRS/Commands/Employee/CreateEmployee/CreateEmployeeCommandResponse.cs" />
-      <File FileName="Core/Domain/Entities/Employee.cs" />
-      <File FileName="Infrastructure/Persistance/Repositories/ReadRepository.cs" />
-      <File FileName="Infrastructure/Persistance/Contexts/HRDbContext.cs" />
-      <File FileName="Core/Domain/Entities/EmployeeJob.cs" />
-      <File FileName="Core/Application/Repositories/IEmployeeJobWriteRepository.cs" />
-      <File FileName="Core/Application/Repositories/IEmployeeJobReadRepository.cs" />
-      <File FileName="Core/Application/Repositories/IEmployeeReadRepository.cs" />
-      <File FileName="Core/Application/Repositories/IWriteRepository.cs" />
-      <File FileName="Core/Application/Repositories/IRepository.cs" />
-      <File FileName="Core/Application/Repositories/ICategoryReadRepository.cs" />
-      <File FileName="Core/Application/Repositories/IReadRepository.cs" />
-      <File FileName="Infrastructure/Persistance/Repositories/EmployeeJobWriteRepository.cs" />
-      <File FileName="Infrastructure/Persistance/Repositories/EmployeeReadRepository.cs" />
-      <File FileName="Infrastructure/Persistance/Repositories/CategoryWriteRepository.cs" />
-      <File FileName="Infrastructure/Persistance/Repositories/EmployeeJobReadRepository.cs" />
-      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" Line="55" Column="41" />
-      <File FileName="Presentation/Presentation/Views/Admin/CreateJob.cshtml" Line="58" Column="8" />
+      <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Admin/GetJob.cshtml" Line="12" Column="10" />
+      <File FileName="Presentation/Presentation/Views/Job/GetJob.cshtml" Line="21" Column="33" />
+      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" Line="92" Column="27" />
+      <File FileName="Core/Application/CQRS/Commands/Job/RemoveJob/RemoveJobCommandRequest.cs" Line="8" Column="34" />
+      <File FileName="Core/Application/CQRS/Commands/Job/RemoveJob/RemoveJobCommandResponse.cs" Line="1" Column="1" />
+      <File FileName="Core/Application/CQRS/Commands/Job/RemoveJob/RemoveJobCommandHandler.cs" Line="19" Column="51" />
+      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandRequest.cs" Line="8" Column="9" />
+      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandResponse.cs" Line="11" Column="47" />
+      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandHandler.cs" Line="35" Column="13" />
+      <File FileName="Presentation/Presentation/Controllers/JobController.cs" Line="18" Column="9" />
+      <File FileName="Presentation/Presentation/Views/Admin/UpdateJob.cshtml" Line="2" Column="14" />
+      <File FileName="Presentation/Presentation/Views/Admin/CreateJob.cshtml" Line="24" Column="1" />
       <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandRequest.cs" Line="8" Column="1" />
-      <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandResponse.cs" Line="10" Column="47" />
-      <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandHandler.cs" Line="33" Column="15" />
-      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategoryCommandRequest.cs" Line="4" Column="60" />
-      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategoryCommandResponse.cs" Line="6" Column="44" />
-      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategoryCommandHandler.cs" Line="5" Column="45" />
-      <File FileName="Presentation/Presentation/Views/Admin/CreateCategory.cshtml" Line="21" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -71,17 +31,15 @@
               <Node name="Application" expanded="True">
                 <Node name="CQRS" expanded="True">
                   <Node name="Commands" expanded="True">
-                    <Node name="Category" expanded="True">
-                      <Node name="CreateCategory" expanded="True">
-                        <Node name="CreateCategoryCommandHandler.cs" selected="True" />
-                      </Node>
+                    <Node name="Job" expanded="True">
+                      <Node name="CreateJob" expanded="True" />
+                      <Node name="RemoveJob" expanded="True" />
+                      <Node name="UpdateJob" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
               </Node>
-              <Node name="Domain" expanded="True">
-                <Node name="Entities" expanded="True" />
-              </Node>
+              <Node name="Domain" expanded="True" />
             </Node>
             <Node name="Infrastructure" expanded="True">
               <Node name="Persistance" expanded="True">
@@ -91,10 +49,13 @@
             </Node>
             <Node name="Presentation" expanded="True">
               <Node name="Presentation" expanded="True">
-                <Node name="Controllers" expanded="True" />
+                <Node name="Controllers" expanded="True">
+                  <Node name="AdminController.cs" selected="True" />
+                </Node>
                 <Node name="Views" expanded="True">
                   <Node name="Admin" expanded="True" />
                   <Node name="Employee" expanded="True" />
+                  <Node name="Job" expanded="True" />
                   <Node name="User" expanded="True" />
                 </Node>
               </Node>

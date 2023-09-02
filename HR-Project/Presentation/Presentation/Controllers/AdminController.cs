@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.CQRS.Commands.Category.CreateCategory;
 using Application.CQRS.Commands.Job.CreateJob;
+using Application.CQRS.Commands.Job.RemoveJob;
 using Application.Repositories;
+using Application.Services;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -18,10 +20,12 @@ namespace Presentation.Controllers
         // GET: /<controller>/
         private readonly IMediator _mediator;
         private readonly ICategoryReadRepository _categoryReadRepository;
-        public AdminController(IMediator mediator,ICategoryReadRepository categoryReadRepository)
+        private readonly IJobCategoryService _jobCategoryService;
+        public AdminController(IMediator mediator,ICategoryReadRepository categoryReadRepository,IJobCategoryService jobCategoryService)
         {
             _mediator = mediator;
             _categoryReadRepository = categoryReadRepository;
+            _jobCategoryService = jobCategoryService;
         }
         public IActionResult CreateJob()
         {
@@ -43,7 +47,7 @@ namespace Presentation.Controllers
         public async Task<IActionResult> CreateJob(CreateJobCommandRequest model)
         {
              await _mediator.Send(model);
-            return RedirectToAction("GetJob", "Job");
+            return RedirectToAction("GetJob", "Admin");
         }
 
         public IActionResult CreateCategory()
@@ -58,6 +62,19 @@ namespace Presentation.Controllers
             return View(response);
         }
 
+        public IActionResult GetJob()
+        {
+            var values = _jobCategoryService.GetJobCategory();
+            return View(values);
+        }
+
+        public async Task<IActionResult> RemoveJob(string id)
+        {
+            var response = new RemoveJobCommandRequest();
+            response.Id = id;
+            await _mediator.Send(response);
+            return RedirectToAction("GetJob", "Admin");
+        }
     }
 }
 
