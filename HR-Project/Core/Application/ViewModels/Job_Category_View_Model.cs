@@ -5,8 +5,7 @@ namespace Application.ViewModels
 {
 	public class Job_Category_View_Model
 	{
-        public string JobId { get; set; }
-        
+        public string JobId { get; set; }        
         public string JobName { get; set; }
         public string Type { get; set; }
         public int Level { get; set; }

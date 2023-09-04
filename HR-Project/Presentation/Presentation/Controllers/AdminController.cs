@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Application.CQRS.Commands.Category.CreateCategory;
 using Application.CQRS.Commands.Job.CreateJob;
 using Application.CQRS.Commands.Job.RemoveJob;
+using Application.CQRS.Commands.Job.UpdateJob;
 using Application.Repositories;
 using Application.Services;
 using MediatR;
@@ -20,12 +21,16 @@ namespace Presentation.Controllers
         // GET: /<controller>/
         private readonly IMediator _mediator;
         private readonly ICategoryReadRepository _categoryReadRepository;
+        private readonly IJobReadRepository _jobReadRepository;
         private readonly IJobCategoryService _jobCategoryService;
-        public AdminController(IMediator mediator,ICategoryReadRepository categoryReadRepository,IJobCategoryService jobCategoryService)
+        private readonly IEmployeeJobService _employeeJobService;
+        public AdminController(IMediator mediator,ICategoryReadRepository categoryReadRepository,IJobCategoryService jobCategoryService,IJobReadRepository jobReadRepository,IEmployeeJobService employeeJobService)
         {
             _mediator = mediator;
             _categoryReadRepository = categoryReadRepository;
             _jobCategoryService = jobCategoryService;
+            _jobReadRepository = jobReadRepository;
+            _employeeJobService = employeeJobService;
         }
         public IActionResult CreateJob()
         {
@@ -74,6 +79,41 @@ namespace Presentation.Controllers
             response.Id = id;
             await _mediator.Send(response);
             return RedirectToAction("GetJob", "Admin");
+        }
+
+        public async Task<IActionResult> UpdateJob(string id)
+        {
+            var categories = _categoryReadRepository.GetAll();
+            List<SelectListItem> values = (from c in categories.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = c.CategoryName,
+                                               Value = c.Id.ToString()
+
+                                           }).ToList();
+
+            ViewBag.Categories = values;
+            var job = await _jobReadRepository.GetById(id);
+            var jobMapper = new UpdateJobCommandResponse();
+            jobMapper.CategoryId = job.CategoryId;
+            jobMapper.Description = job.Description;
+            jobMapper.JobName = job.JobName;
+            jobMapper.Level = job.Level;
+            jobMapper.Type = job.Type;
+            return View(jobMapper);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateJob(UpdateJobCommandRequest model)
+        {
+            await _mediator.Send(model);
+            return RedirectToAction("GetJob","Admin");
+        }
+
+        public IActionResult GetEmployeeJob()
+        {
+            var value = _employeeJobService.GetEmployeeJob();
+            return View(value);
         }
     }
 }

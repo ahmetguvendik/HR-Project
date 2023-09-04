@@ -1,6 +1,58 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@using Application.CQRS.Commands.Job.UpdateJob
+@model UpdateJobCommandResponse
 
+<form asp-action="UpdateJob" asp-controller="Admin" method="post">
+    <div class="mb-3">
+        <label>
+            Job Name:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.JobName></span>
+        <input type="text" asp-for=@Model.JobName class=form-control />
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <label>
+            Job Type:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.Type></span>
+        <input type="text" asp-for=@Model.Type class=form-control />
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <label>
+            Job Level:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.Level></span>
+        <input type="number" asp-for=@Model.Level class=form-control />
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <label>
+            Aciklama:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.Description></span>
+        <input type="text" asp-for=@Model.Description class=form-control />
+    </div>
+
+    <br />
+
+    @Html.DropDownListFor(x => x.CategoryId, (IEnumerable<SelectListItem>)ViewBag.Categories, "--Select Category--")
+
+    <div>
+
+        <button>
+            Gonder
+        </button>
+    </div>
+
+    <div>
+        @ViewBag.ErrorMessage
+    </div>
+
+</form>

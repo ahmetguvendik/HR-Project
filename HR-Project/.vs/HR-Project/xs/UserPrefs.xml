@@ -1,27 +1,32 @@
 ﻿<Properties StartupConfiguration="{68FEF03A-2A16-4202-B106-0A2FBC4FDBE8}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Controllers/AdminController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Presentation/Views/Admin/GetJob.cshtml" Line="12" Column="10" />
-      <File FileName="Presentation/Presentation/Views/Job/GetJob.cshtml" Line="21" Column="33" />
-      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" Line="92" Column="27" />
-      <File FileName="Core/Application/CQRS/Commands/Job/RemoveJob/RemoveJobCommandRequest.cs" Line="8" Column="34" />
-      <File FileName="Core/Application/CQRS/Commands/Job/RemoveJob/RemoveJobCommandResponse.cs" Line="1" Column="1" />
-      <File FileName="Core/Application/CQRS/Commands/Job/RemoveJob/RemoveJobCommandHandler.cs" Line="19" Column="51" />
-      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandRequest.cs" Line="8" Column="9" />
-      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandResponse.cs" Line="11" Column="47" />
-      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandHandler.cs" Line="35" Column="13" />
-      <File FileName="Presentation/Presentation/Controllers/JobController.cs" Line="18" Column="9" />
-      <File FileName="Presentation/Presentation/Views/Admin/UpdateJob.cshtml" Line="2" Column="14" />
-      <File FileName="Presentation/Presentation/Views/Admin/CreateJob.cshtml" Line="24" Column="1" />
-      <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandRequest.cs" Line="8" Column="1" />
+      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandHandler.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandRequest.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandHandler.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandRequest.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandResponse.cs" />
+      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" />
+      <File FileName="Presentation/Presentation/Views/Admin/CreateCategory.cshtml" />
+      <File FileName="Presentation/Presentation/Views/Admin/GetJob.cshtml" />
+      <File FileName="Presentation/Presentation/Views/Admin/CreateJob.cshtml" />
+      <File FileName="Presentation/Presentation/Views/Admin/UpdateJob.cshtml" />
+      <File FileName="Core/Application/Services/IJobCategoryService.cs" />
+      <File FileName="Core/Application/ViewModels/Employee_Job_ViewModel.cs" />
+      <File FileName="Core/Application/ViewModels/Job_Category_View_Model.cs" />
+      <File FileName="Core/Application/ServiceRegistration.cs" />
+      <File FileName="Infrastructure/Persistance/Services/EmployeeJobService.cs" />
+      <File FileName="Infrastructure/Persistance/Services/JobCategoryService.cs" />
+      <File FileName="Core/Domain/Entities/Employee.cs" />
+      <File FileName="Core/Domain/Entities/EmployeeJob.cs" />
+      <File FileName="Core/Domain/Entities/Job.cs" />
+      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" />
+      <File FileName="Presentation/Presentation/Views/Admin/GetEmployeeJob.cshtml" />
+      <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" Line="41" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -32,14 +37,16 @@
                 <Node name="CQRS" expanded="True">
                   <Node name="Commands" expanded="True">
                     <Node name="Job" expanded="True">
-                      <Node name="CreateJob" expanded="True" />
-                      <Node name="RemoveJob" expanded="True" />
                       <Node name="UpdateJob" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
+                <Node name="Services" expanded="True" />
+                <Node name="ViewModels" expanded="True" />
               </Node>
-              <Node name="Domain" expanded="True" />
+              <Node name="Domain" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
             </Node>
             <Node name="Infrastructure" expanded="True">
               <Node name="Persistance" expanded="True">
@@ -49,13 +56,14 @@
             </Node>
             <Node name="Presentation" expanded="True">
               <Node name="Presentation" expanded="True">
-                <Node name="Controllers" expanded="True">
-                  <Node name="AdminController.cs" selected="True" />
-                </Node>
+                <Node name="Controllers" expanded="True" />
                 <Node name="Views" expanded="True">
                   <Node name="Admin" expanded="True" />
                   <Node name="Employee" expanded="True" />
                   <Node name="Job" expanded="True" />
+                  <Node name="Shared" expanded="True">
+                    <Node name="_Layout.cshtml" selected="True" />
+                  </Node>
                   <Node name="User" expanded="True" />
                 </Node>
               </Node>
@@ -65,4 +73,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

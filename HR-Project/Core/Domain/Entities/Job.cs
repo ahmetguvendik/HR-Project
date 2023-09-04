@@ -11,6 +11,6 @@ namespace Domain.Entities
 		public string CategoryId { get; set; }
         public IQueryable<Employee> Employees { get; set; }
 
-    }
+	}
 }
 
