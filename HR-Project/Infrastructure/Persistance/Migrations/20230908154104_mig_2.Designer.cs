@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Persistance.Contexts;
@@ -11,9 +12,11 @@ using Persistance.Contexts;
 namespace Persistance.Migrations
 {
     [DbContext(typeof(HRDbContext))]
-    partial class HRDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230908154104_mig_2")]
+    partial class mig_2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -135,6 +138,9 @@ namespace Persistance.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<bool>("IsOk")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
@@ -160,12 +166,6 @@ namespace Persistance.Migrations
                     b.Property<string>("EmployeeId")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<bool>("IsOk")
-                        .HasColumnType("boolean");
-
-                    b.Property<bool>("IsRed")
-                        .HasColumnType("boolean");
 
                     b.Property<string>("JobId")
                         .IsRequired()

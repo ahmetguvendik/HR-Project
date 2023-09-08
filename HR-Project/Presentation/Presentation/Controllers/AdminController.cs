@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.CQRS.Commands.Category.CreateCategory;
+﻿using Application.CQRS.Commands.Category.CreateCategory;
 using Application.CQRS.Commands.Job.CreateJob;
+using Application.CQRS.Commands.Job.JobConfirm;
+using Application.CQRS.Commands.Job.JobReject;
 using Application.CQRS.Commands.Job.RemoveJob;
 using Application.CQRS.Commands.Job.UpdateJob;
 using Application.Repositories;
@@ -114,6 +112,18 @@ namespace Presentation.Controllers
         {
             var value = _employeeJobService.GetEmployeeJob();
             return View(value);
+        }
+
+        public async Task<IActionResult> SendOk(JobConfirmCommandRequest model)
+        {
+            var response = await _mediator.Send(model);
+            return RedirectToAction("GetEmployeeJob","Admin");
+        }
+
+        public async Task<IActionResult> SendRed(JobRejectCommandRequest model)
+        {
+            var response = await _mediator.Send(model);
+            return RedirectToAction("GetEmployeeJob", "Admin");
         }
     }
 }

@@ -15,6 +15,23 @@
                 <th>@item.EmployeeName</th>
                 <th>@item.EmployeeSurname</th>
                 <th>@item.JobName</th>
+
+                @if (item.IsOk == false && item.IsRed == false)
+                {
+                    <th><a asp-action="SendOk" asp-controller="Admin" asp-route-id=@item.Id>Onayla</a></th>
+                    <th><a asp-action="SendRed" asp-controller="Admin" asp-route-id=@item.Id>Reddet</a></th>
+                }
+
+                @if (item.IsOk == true)
+                {
+                    <th>Basvuruyu Onayladiniz</th>
+                }
+
+                @if (item.IsRed == true)
+                {
+                    <th>Basvuruyu Reddeddiniz</th>
+                }
+
             </tr>
         }
 

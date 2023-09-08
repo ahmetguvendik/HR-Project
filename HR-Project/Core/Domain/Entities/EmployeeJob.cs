@@ -7,6 +7,8 @@ namespace Domain.Entities
 		public string JobId { get; set; }
 		public Employee Employee { get; set; }
 		public Job Job { get; set; }
+		public bool IsOk { get; set; }
+		public bool IsRed { get; set; }	
 	}
 }
 

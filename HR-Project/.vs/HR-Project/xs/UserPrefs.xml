@@ -1,32 +1,25 @@
 ﻿<Properties StartupConfiguration="{68FEF03A-2A16-4202-B106-0A2FBC4FDBE8}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Views/Admin/GetEmployeeJob.cshtml">
     <Files>
-      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandHandler.cs" />
-      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandRequest.cs" />
-      <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandHandler.cs" />
-      <File FileName="Core/Application/CQRS/Commands/Job/CreateJob/CreateJobCommandRequest.cs" />
-      <File FileName="Core/Application/CQRS/Commands/Job/UpdateJob/UpdateJobCommandResponse.cs" />
-      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" />
-      <File FileName="Presentation/Presentation/Views/Admin/CreateCategory.cshtml" />
-      <File FileName="Presentation/Presentation/Views/Admin/GetJob.cshtml" />
-      <File FileName="Presentation/Presentation/Views/Admin/CreateJob.cshtml" />
-      <File FileName="Presentation/Presentation/Views/Admin/UpdateJob.cshtml" />
-      <File FileName="Core/Application/Services/IJobCategoryService.cs" />
-      <File FileName="Core/Application/ViewModels/Employee_Job_ViewModel.cs" />
-      <File FileName="Core/Application/ViewModels/Job_Category_View_Model.cs" />
-      <File FileName="Core/Application/ServiceRegistration.cs" />
-      <File FileName="Infrastructure/Persistance/Services/EmployeeJobService.cs" />
-      <File FileName="Infrastructure/Persistance/Services/JobCategoryService.cs" />
+      <File FileName="Presentation/Presentation/Views/Admin/GetJob.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Admin/GetEmployeeJob.cshtml" Line="19" Column="43" />
       <File FileName="Core/Domain/Entities/Employee.cs" />
+      <File FileName="Core/Application/ViewModels/Employee_Job_ViewModel.cs" />
+      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" Line="123" Column="41" />
+      <File FileName="Core/Application/CQRS/Commands/Job/JobConfirm/JobConfirmCommandRequest.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Job/JobConfirm/JobConfirmCommandResponse.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Job/JobConfirm/JobConfirmCommandHandler.cs" />
+      <File FileName="Infrastructure/Persistance/Services/EmployeeJobService.cs" />
       <File FileName="Core/Domain/Entities/EmployeeJob.cs" />
+      <File FileName="Infrastructure/Persistance/Services/JobCategoryService.cs" />
+      <File FileName="Presentation/Presentation/Controllers/UserController.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Job/JobReject/JobRejectCommandRequest.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Job/JobReject/JobRejectCommandResponse.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Job/JobReject/JobRejectCommandHandler.cs" Line="23" Column="10" />
       <File FileName="Core/Domain/Entities/Job.cs" />
-      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" />
-      <File FileName="Presentation/Presentation/Views/Admin/GetEmployeeJob.cshtml" />
-      <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" Line="41" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -37,11 +30,11 @@
                 <Node name="CQRS" expanded="True">
                   <Node name="Commands" expanded="True">
                     <Node name="Job" expanded="True">
-                      <Node name="UpdateJob" expanded="True" />
+                      <Node name="JobConfirm" expanded="True" />
+                      <Node name="JobReject" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
-                <Node name="Services" expanded="True" />
                 <Node name="ViewModels" expanded="True" />
               </Node>
               <Node name="Domain" expanded="True">
@@ -58,12 +51,12 @@
               <Node name="Presentation" expanded="True">
                 <Node name="Controllers" expanded="True" />
                 <Node name="Views" expanded="True">
-                  <Node name="Admin" expanded="True" />
+                  <Node name="Admin" expanded="True">
+                    <Node name="GetEmployeeJob.cshtml" selected="True" />
+                  </Node>
                   <Node name="Employee" expanded="True" />
                   <Node name="Job" expanded="True" />
-                  <Node name="Shared" expanded="True">
-                    <Node name="_Layout.cshtml" selected="True" />
-                  </Node>
+                  <Node name="Shared" expanded="True" />
                   <Node name="User" expanded="True" />
                 </Node>
               </Node>
@@ -73,7 +66,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

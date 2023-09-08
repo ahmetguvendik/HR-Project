@@ -22,16 +22,22 @@ namespace Persistance.Services
                         join ej in _context.EmployeeJob
             on j.Id equals ej.JobId
                         join e in _context.Employees
-             on ej.EmployeeId equals e.Id 
+             on ej.EmployeeId equals e.Id
                         select new Employee_Job_ViewModel
                         {
+                           Id = ej.Id,
                            EmployeeName = e.Name,
                            JobName = j.JobName,
-                           EmployeeSurname = e.Surname
+                           EmployeeSurname = e.Surname,
+                           IsOk = ej.IsOk,
+                           IsRed = ej.IsRed
+                           
                         };
 
             return model;
         }
+
+
     }
 }
 

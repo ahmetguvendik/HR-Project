@@ -24,6 +24,8 @@
     <None Remove="CQRS\Commands\Category\CreateCategory\" />
     <None Remove="CQRS\Commands\Job\RemoveJob\" />
     <None Remove="CQRS\Commands\Job\UpdateJob\" />
+    <None Remove="CQRS\Commands\Job\JobConfirm\" />
+    <None Remove="CQRS\Commands\Job\JobReject\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -43,6 +45,8 @@
     <Folder Include="CQRS\Commands\Category\CreateCategory\" />
     <Folder Include="CQRS\Commands\Job\RemoveJob\" />
     <Folder Include="CQRS\Commands\Job\UpdateJob\" />
+    <Folder Include="CQRS\Commands\Job\JobConfirm\" />
+    <Folder Include="CQRS\Commands\Job\JobReject\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
