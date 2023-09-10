@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.CQRS.Commands.User.CreateUser;
+﻿using Application.CQRS.Commands.User.CreateUser;
 using Application.CQRS.Commands.User.LoginUser;
 using Application.CQRS.Commands.User.SignOutUser;
+using Application.Services;
+using Application.ViewModels;
+using Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -15,9 +15,13 @@ namespace Presentation.Controllers
     public class UserController : Controller
     {
         private readonly IMediator _mediator;
-        public UserController(IMediator mediator)
+        private readonly IMailService _emailService;
+        private readonly UserManager<AppUser> _userManager;
+        public UserController(IMediator mediator,IMailService emailService,UserManager<AppUser> userManager)
         {
             _mediator = mediator;
+            _emailService = emailService;
+            _userManager = userManager;     
         }
 
         public IActionResult SignIn()
@@ -60,6 +64,8 @@ namespace Presentation.Controllers
             await _mediator.Send(new SignOutCommandRequest());
             return RedirectToAction("SignIn", "User");
         }
+
+        
     }
 }
 

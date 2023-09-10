@@ -40,7 +40,8 @@ namespace Presentation.Controllers
 
         public async Task<IActionResult> GetApplication()
         {
-            var value = _employeeJobService.GetEmployeeJob();
+            var id = HttpContext.Session.GetString("UserId");
+            var value = _employeeJobService.GetEmployeeJobById(id);
             return View(value);
         }
     }

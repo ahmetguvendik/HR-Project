@@ -183,6 +183,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.1.1, )"

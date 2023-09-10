@@ -51,3 +51,8 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/MediatR.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/MediatR.Contracts.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/BouncyCastle.Cryptography.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/MailKit.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/MimeKit.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Presentation/Presentation/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll

@@ -23,6 +23,8 @@ namespace Persistance.Services
             on j.Id equals ej.JobId
                         join e in _context.Employees
              on ej.EmployeeId equals e.Id
+                        join u in _context.Users
+                       on e.UserId equals u.Id
                         select new Employee_Job_ViewModel
                         {
                            Id = ej.Id,
@@ -30,16 +32,33 @@ namespace Persistance.Services
                            JobName = j.JobName,
                            EmployeeSurname = e.Surname,
                            IsOk = ej.IsOk,
-                           IsRed = ej.IsRed
-                           
+                           IsRed = ej.IsRed,
+                           Username = u.UserName
                         };
 
             return model;
         }
 
-        public Employee_Job_ViewModel GetEmployeeJobById(string id)
+        public IQueryable<Employee_Job_ViewModel> GetEmployeeJobById(string id)
         {
-            throw new NotImplementedException();
+            var model = (from j in _context.Jobs
+                        join ej in _context.EmployeeJob
+            on j.Id equals ej.JobId
+                        join e in _context.Employees
+             on ej.EmployeeId equals e.Id
+                        join u in _context.Users
+            on e.UserId equals id
+                        select new Employee_Job_ViewModel
+                        {
+                            Id = e.Id,
+                            EmployeeName = e.Name,
+                            JobName = j.JobName,
+                            EmployeeSurname = e.Surname,
+                            IsOk = ej.IsOk,
+                            IsRed = ej.IsRed,
+                        }).Distinct();
+
+            return model;
         }
     }
 }

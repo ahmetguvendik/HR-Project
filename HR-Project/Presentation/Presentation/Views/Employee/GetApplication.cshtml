@@ -1,5 +1,5 @@
 ﻿@using Application.ViewModels
-@model IEnumerable<Employee_Job_ViewModel>
+@model IQueryable<Employee_Job_ViewModel>
 
 <table class="mt-4 table table-hover">
     <thead>
@@ -15,12 +15,14 @@
                 <th>@item.EmployeeName</th>
                 <th>@item.EmployeeSurname</th>
                 <th>@item.JobName</th>
-                <th>@item.IsOk</th>
-                <th>@item.IsRed</th>
-
-
-
-
+                @if (item.IsOk == true)
+                {
+                    <th>Basvurunuz Onayladı Tebrikler</th>
+                }
+                @if (item.IsRed == true)
+                {
+                    <th>Basvurunuz Onaylanmadı</th>
+                }
 
             </tr>
         }
