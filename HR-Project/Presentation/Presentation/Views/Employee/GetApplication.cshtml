@@ -1,0 +1,30 @@
+﻿@using Application.ViewModels
+@model IEnumerable<Employee_Job_ViewModel>
+
+<table class="mt-4 table table-hover">
+    <thead>
+        <tr>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <th>@item.EmployeeName</th>
+                <th>@item.EmployeeSurname</th>
+                <th>@item.JobName</th>
+                <th>@item.IsOk</th>
+                <th>@item.IsRed</th>
+
+
+
+
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>

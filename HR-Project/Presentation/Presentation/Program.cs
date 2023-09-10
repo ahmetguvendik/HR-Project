@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddMediatorService();
 builder.Services.AddPersistanceService();
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -23,11 +24,15 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
+
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=User}/{action=SignIn}/{id?}");
 
+app.UseSession();
 app.Run();
 

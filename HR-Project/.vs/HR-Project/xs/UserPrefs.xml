@@ -1,40 +1,56 @@
 ﻿<Properties StartupConfiguration="{68FEF03A-2A16-4202-B106-0A2FBC4FDBE8}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Views/Admin/GetEmployeeJob.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/Domain/Entities/Employee.cs">
     <Files>
       <File FileName="Presentation/Presentation/Views/Admin/GetJob.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Presentation/Views/Admin/GetEmployeeJob.cshtml" Line="19" Column="43" />
-      <File FileName="Core/Domain/Entities/Employee.cs" />
-      <File FileName="Core/Application/ViewModels/Employee_Job_ViewModel.cs" />
-      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" Line="123" Column="41" />
+      <File FileName="Presentation/Presentation/Views/Admin/GetEmployeeJob.cshtml" Line="40" Column="9" />
+      <File FileName="Core/Domain/Entities/Employee.cs" Line="17" Column="1" />
+      <File FileName="Core/Application/ViewModels/Employee_Job_ViewModel.cs" Line="11" Column="35" />
+      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" Line="113" Column="1" />
       <File FileName="Core/Application/CQRS/Commands/Job/JobConfirm/JobConfirmCommandRequest.cs" />
       <File FileName="Core/Application/CQRS/Commands/Job/JobConfirm/JobConfirmCommandResponse.cs" />
       <File FileName="Core/Application/CQRS/Commands/Job/JobConfirm/JobConfirmCommandHandler.cs" />
-      <File FileName="Infrastructure/Persistance/Services/EmployeeJobService.cs" />
+      <File FileName="Infrastructure/Persistance/Services/EmployeeJobService.cs" Line="42" Column="49" />
       <File FileName="Core/Domain/Entities/EmployeeJob.cs" />
       <File FileName="Infrastructure/Persistance/Services/JobCategoryService.cs" />
-      <File FileName="Presentation/Presentation/Controllers/UserController.cs" />
+      <File FileName="Presentation/Presentation/Controllers/UserController.cs" Line="1" Column="1" />
       <File FileName="Core/Application/CQRS/Commands/Job/JobReject/JobRejectCommandRequest.cs" />
       <File FileName="Core/Application/CQRS/Commands/Job/JobReject/JobRejectCommandResponse.cs" />
-      <File FileName="Core/Application/CQRS/Commands/Job/JobReject/JobRejectCommandHandler.cs" Line="23" Column="10" />
+      <File FileName="Core/Application/CQRS/Commands/Job/JobReject/JobRejectCommandHandler.cs" />
       <File FileName="Core/Domain/Entities/Job.cs" />
+      <File FileName="Presentation/Presentation/Controllers/JobController.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Controllers/EmployeeController.cs" Line="45" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" Line="43" Column="142" />
+      <File FileName="Presentation/Presentation/Views/Employee/GetApplication.cshtml" Line="23" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Employee/ApplyJob.cshtml" Line="1" Column="1" />
+      <File FileName="Core/Application/Services/IEmployeeJobService.cs" Line="9" Column="62" />
+      <File FileName="Core/Application/CQRS/Commands/Employee/CreateEmployee/CreateEmployeeCommandResponse.cs" Line="6" Column="39" />
+      <File FileName="Core/Application/CQRS/Commands/Employee/CreateEmployee/CreateEmployeeCommandRequest.cs" Line="1" Column="1" />
+      <File FileName="Core/Application/CQRS/Commands/Employee/CreateEmployee/CreateEmployeeCommandHandler.cs" Line="43" Column="33" />
+      <File FileName="Presentation/Presentation/Program.cs" Line="10" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HR-Project" expanded="True">
+          <Node name="HR-Project" expanded="True" selected="True">
             <Node name="Core" expanded="True">
               <Node name="Application" expanded="True">
                 <Node name="CQRS" expanded="True">
                   <Node name="Commands" expanded="True">
+                    <Node name="Employee" expanded="True">
+                      <Node name="CreateEmployee" expanded="True" />
+                    </Node>
                     <Node name="Job" expanded="True">
                       <Node name="JobConfirm" expanded="True" />
                       <Node name="JobReject" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
+                <Node name="Services" expanded="True" />
                 <Node name="ViewModels" expanded="True" />
               </Node>
               <Node name="Domain" expanded="True">
@@ -51,9 +67,7 @@
               <Node name="Presentation" expanded="True">
                 <Node name="Controllers" expanded="True" />
                 <Node name="Views" expanded="True">
-                  <Node name="Admin" expanded="True">
-                    <Node name="GetEmployeeJob.cshtml" selected="True" />
-                  </Node>
+                  <Node name="Admin" expanded="True" />
                   <Node name="Employee" expanded="True" />
                   <Node name="Job" expanded="True" />
                   <Node name="Shared" expanded="True" />
@@ -66,8 +80,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
 </Properties>

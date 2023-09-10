@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.CQRS.Commands.Employee.CreateEmployee;
+﻿using Application.CQRS.Commands.Employee.CreateEmployee;
+using Application.Repositories;
+using Application.Services;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,9 +11,15 @@ namespace Presentation.Controllers
     public class EmployeeController : Controller
     {
         private readonly IMediator _mediator;
-        public EmployeeController(IMediator mediator)
+        private readonly IEmployeeJobReadRepository _employeeJobReadRepository;
+        private readonly IEmployeeReadRepository _employeeReadRepository;
+        private readonly IEmployeeJobService _employeeJobService;
+        public EmployeeController(IMediator mediator,IEmployeeJobReadRepository employeeJobReadRepository,IEmployeeReadRepository employeeReadRepository,IEmployeeJobService employeeJobService)
         {
-            _mediator = mediator;       
+            _mediator = mediator;
+            _employeeJobReadRepository = employeeJobReadRepository;
+            _employeeReadRepository = employeeReadRepository;
+            _employeeJobService = employeeJobService;
         }
 
         [HttpPost]
@@ -27,9 +31,17 @@ namespace Presentation.Controllers
 
         public async Task<IActionResult> ApplyJob(string id)
         {
+            var userId = HttpContext.Session.GetString("UserId");
             var response = new CreateEmployeeCommandResponse();
             response.JobId = id;
+            response.UserId = userId;
             return View(response);
+        }
+
+        public async Task<IActionResult> GetApplication()
+        {
+            var value = _employeeJobService.GetEmployeeJob();
+            return View(value);
         }
     }
 }

@@ -37,7 +37,10 @@ namespace Persistance.Services
             return model;
         }
 
-
+        public Employee_Job_ViewModel GetEmployeeJobById(string id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

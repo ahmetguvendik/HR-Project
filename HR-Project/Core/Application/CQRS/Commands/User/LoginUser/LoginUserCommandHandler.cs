@@ -1,6 +1,7 @@
 ﻿using System;
 using Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 
 namespace Application.CQRS.Commands.User.LoginUser
@@ -19,6 +20,7 @@ namespace Application.CQRS.Commands.User.LoginUser
         {
             var appUser = await _userManager.FindByNameAsync(request.UserName);
             var response = await _signInManager.PasswordSignInAsync(request.UserName, request.Password, false, false);
+    
             if (response.Succeeded)
             {
                 var role = await _userManager.GetRolesAsync(appUser);

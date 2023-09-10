@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fvOBYSCBZAdNM7ft8T618+aIqH3J0UmVo+y5/eAltOaYuM1sG17zTjU8HB9hMp+ZFiGDQXM4N84HIhfKDxkJyw==",
+  "dgSpecHash": "cjM3gNXSjcVjdtlL3ODthQzRQXbwG2a2uxo8HKZhiAsflSDHI5tQWcDEt4/kWIEKFvNW6L5zW6RY7nP5k7pSHQ==",
   "success": true,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Infrastructure/Persistance/Persistance.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.identity/2.2.0/microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.10/microsoft.aspnetcore.identity.entityframeworkcore.7.0.10.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.session/2.2.0/microsoft.aspnetcore.session.2.2.0.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.10/microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.10/microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",

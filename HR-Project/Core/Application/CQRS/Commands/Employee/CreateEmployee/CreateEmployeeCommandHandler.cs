@@ -2,6 +2,7 @@
 using System.Linq;
 using Application.Repositories;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace Application.CQRS.Commands.Employee.CreateEmployee
@@ -30,6 +31,7 @@ namespace Application.CQRS.Commands.Employee.CreateEmployee
             emplooyeeJob.Id = Guid.NewGuid().ToString();
             emplooyeeJob.EmployeeId = employee.Id;
             emplooyeeJob.JobId = request.JobId;
+            employee.UserId = request.UserId;
             await _employeeJobWriteRepository.AddAsync(emplooyeeJob);
             await _employeeWriteRepository.AddAsync(employee);
             await _employeeWriteRepository.SaveAsync();
@@ -39,7 +41,9 @@ namespace Application.CQRS.Commands.Employee.CreateEmployee
                 SurName = request.SurName,
                 Description = request.Description,
                 Title = request.Title,
-                JobId = request.JobId
+                JobId = request.JobId,
+                UserId = request.UserId
+            
             };
         }
     }

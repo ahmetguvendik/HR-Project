@@ -9,7 +9,8 @@ namespace Application.CQRS.Commands.Employee.CreateEmployee
 		public string SurName { get; set; }
 		public string Title { get; set; }
 		public string Description { get; set; }
-		public string JobId { get; set; }	
+		public string JobId { get; set; }
+		public string UserId { get; set; }	
 	}
 }
 

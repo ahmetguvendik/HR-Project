@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E0pBLAQrV44sCbn3lctyXBKZMWKsbuikmEkXYiBGqo5HbY4kfiYuOV86sictaERqMf/1vo2IsJCPDGFil4f9HA==",
+  "dgSpecHash": "uqcZPs/kp5n0EwLAow/N6wJ6KKq5v0e02H9TGEuX0pYLG++OVgFcjv5LgQ6hWo1jJMiufjTHc1KeqDk4zNFKrw==",
   "success": true,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Application/Application.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.identity/2.2.0/microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.10/microsoft.aspnetcore.identity.entityframeworkcore.7.0.10.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.session/2.2.0/microsoft.aspnetcore.session.2.2.0.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.10/microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.10/microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",

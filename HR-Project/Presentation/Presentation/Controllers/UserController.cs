@@ -29,6 +29,7 @@ namespace Presentation.Controllers
         public async Task<IActionResult> SignIn(LoginUserCommandRequest model)
         {
             var response = await _mediator.Send(model);
+            HttpContext.Session.SetString("UserId", response.Id);
             if (response.Role == "Admin")
             {
                 return RedirectToAction("CreateJob", "Admin");
