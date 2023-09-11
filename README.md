@@ -1,3 +1,5 @@
+Admin ve Member olmak uzere 2 farkli panel yapilmistir. Asp.Net Core MVC projesinden Onion Arch. kullanilmistir.
+
 # HR-Project![Ekran Resmi 2023-09-11 15 54 24 (2)](https://github.com/ahmetguvendik/HR-Project/assets/62288196/a5a8eb2c-f1c8-475b-9b54-31a692f56901)
 ![Ekran Resmi 2023-09-11 15 53 57 (2)](https://github.com/ahmetguvendik/HR-Project/assets/62288196/349ae9a4-768a-44cc-a0e4-02438fb90b42)
 ![Ekran Resmi 2023-09-11 15 53 44 (2)](https://github.com/ahmetguvendik/HR-Project/assets/62288196/add11bab-d244-4ad5-a808-5e8babfb8a04)
