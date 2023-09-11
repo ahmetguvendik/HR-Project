@@ -1,39 +1,27 @@
 ﻿<Properties StartupConfiguration="{68FEF03A-2A16-4202-B106-0A2FBC4FDBE8}|https">
-  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/appsettings.json">
     <Files>
-      <File FileName="Presentation/Presentation/Views/Employee/GetApplication.cshtml" Line="2" Column="18" />
-      <File FileName="Presentation/Presentation/Controllers/EmployeeController.cs" Line="38" Column="35" />
-      <File FileName="Presentation/Presentation/Controllers/UserController.cs" Line="68" Column="9" />
-      <File FileName="Infrastructure/Persistance/Services/EmployeeJobService.cs" Line="59" Column="39" />
-      <File FileName="Presentation/Presentation/Views/Admin/GetEmployeeJob.cshtml" Line="18" Column="40" />
-      <File FileName="Core/Application/ViewModels/Employee_Job_ViewModel.cs" Line="7" Column="40" />
-      <File FileName="Presentation/Presentation/Views/User/SignUp.cshtml" Line="59" Column="21" />
-      <File FileName="Presentation/Presentation/Views/User/SignIn.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Presentation/Program.cs" Line="44" Column="11" />
-      <File FileName="Core/Application/Services/IMailService.cs" Line="6" Column="69" />
-      <File FileName="Presentation/Presentation/appsettings.json" Line="18" Column="1" />
-      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" Line="30" Column="8" />
+      <File FileName="Core/Application/Exceptions/NotFoundUserException.cs" />
+      <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandHandler.cs" />
+      <File FileName="Presentation/Presentation/Views/User/SignIn.cshtml" />
+      <File FileName="Presentation/Presentation/Controllers/UserController.cs" />
+      <File FileName="Presentation/Presentation/Program.cs" Line="41" Column="47" />
+      <File FileName="Presentation/Presentation/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HR-Project" expanded="True" selected="True">
+          <Node name="HR-Project" expanded="True">
             <Node name="Core" expanded="True">
               <Node name="Application" expanded="True">
-                <Node name="ViewModels" expanded="True" />
-              </Node>
-              <Node name="Domain" expanded="True">
-                <Node name="Entities" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Infrastructure" expanded="True">
-              <Node name="Persistance" expanded="True">
-                <Node name="Contexts" expanded="True" />
-                <Node name="Repositories" expanded="True" />
-                <Node name="Services" expanded="True" />
+                <Node name="CQRS" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="User" expanded="True">
+                      <Node name="LoginUser" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="Exceptions" expanded="True" />
               </Node>
             </Node>
             <Node name="Presentation" expanded="True">
@@ -46,6 +34,7 @@
                   <Node name="Shared" expanded="True" />
                   <Node name="User" expanded="True" />
                 </Node>
+                <Node name="appsettings.json" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -53,8 +42,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>

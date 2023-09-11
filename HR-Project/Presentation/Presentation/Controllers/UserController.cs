@@ -1,6 +1,7 @@
 ﻿using Application.CQRS.Commands.User.CreateUser;
 using Application.CQRS.Commands.User.LoginUser;
 using Application.CQRS.Commands.User.SignOutUser;
+using Application.Exceptions;
 using Application.Services;
 using Application.ViewModels;
 using Domain.Entities;
@@ -15,12 +16,10 @@ namespace Presentation.Controllers
     public class UserController : Controller
     {
         private readonly IMediator _mediator;
-        private readonly IMailService _emailService;
         private readonly UserManager<AppUser> _userManager;
-        public UserController(IMediator mediator,IMailService emailService,UserManager<AppUser> userManager)
+        public UserController(IMediator mediator,UserManager<AppUser> userManager)
         {
             _mediator = mediator;
-            _emailService = emailService;
             _userManager = userManager;     
         }
 
@@ -42,6 +41,7 @@ namespace Presentation.Controllers
             {
                 return RedirectToAction("GetJob", "Job");
             }
+          
 
             return View(response);
         }

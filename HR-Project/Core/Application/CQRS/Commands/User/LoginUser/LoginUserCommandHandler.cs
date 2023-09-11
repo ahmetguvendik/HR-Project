@@ -1,4 +1,5 @@
 ﻿using System;
+using Application.Exceptions;
 using Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -20,7 +21,10 @@ namespace Application.CQRS.Commands.User.LoginUser
         {
             var appUser = await _userManager.FindByNameAsync(request.UserName);
             var response = await _signInManager.PasswordSignInAsync(request.UserName, request.Password, false, false);
-    
+            if(appUser == null)
+            {
+                throw new NotFoundUserException();
+            }
             if (response.Succeeded)
             {
                 var role = await _userManager.GetRolesAsync(appUser);
