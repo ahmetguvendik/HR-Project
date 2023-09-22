@@ -1,0 +1,24 @@
+﻿@using Domain.Entities
+@model IQueryable<Job>
+
+<table class="mt-4 table table-hover">
+    <thead>
+        <tr>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <th>@item.JobName</th>
+                <th>@item.Level</th>
+                <th>@item.Type</th>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>

@@ -27,6 +27,9 @@
     <None Remove="CQRS\Commands\Job\JobConfirm\" />
     <None Remove="CQRS\Commands\Job\JobReject\" />
     <None Remove="Exceptions\" />
+    <None Remove="CQRS\Queries\" />
+    <None Remove="CQRS\Queries\Job\" />
+    <None Remove="CQRS\Queries\Job\GetAllJob\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -49,12 +52,15 @@
     <Folder Include="CQRS\Commands\Job\JobConfirm\" />
     <Folder Include="CQRS\Commands\Job\JobReject\" />
     <Folder Include="Exceptions\" />
+    <Folder Include="CQRS\Queries\" />
+    <Folder Include="CQRS\Queries\Job\" />
+    <Folder Include="CQRS\Queries\Job\GetAllJob\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     <PackageReference Include="MediatR" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />

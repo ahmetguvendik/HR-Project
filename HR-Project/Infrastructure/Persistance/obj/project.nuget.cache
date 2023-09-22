@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "1N6p0C98ZpU91QtSr606adQQFRKMkdAhaJblfqnXNoJK7A+bwme1CWhNTKCzt8V6PHZulQ9UVGc4j/sQ3Yp5tA==",
-  "success": true,
+  "dgSpecHash": "a+fcTiqTHCtZmLtfGtJULjFflVxfDr3AVOFSLcx220X/x9iAQ0C0RkKUDp3cUmLnO9FJhwdlI5nhtG+ZiERnZQ==",
+  "success": false,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Infrastructure/Persistance/Persistance.csproj",
   "expectedPackageFiles": [
     "/Users/ahmetguvendik/.nuget/packages/bouncycastle.cryptography/2.2.1/bouncycastle.cryptography.2.2.1.nupkg.sha512",
@@ -76,6 +76,15 @@
       "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.1.1 was resolved.",
       "libraryId": "MediatR",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore from 7.0.11 to 7.0.10. Reference the package directly from the project to select a different version. \n Persistance -> Application -> Microsoft.EntityFrameworkCore (>= 7.0.11) \n Persistance -> Microsoft.EntityFrameworkCore (>= 7.0.10)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
       "targetGraphs": [
         "net7.0"
       ]

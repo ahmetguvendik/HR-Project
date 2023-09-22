@@ -1122,7 +1122,7 @@
           "MediatR": "12.1.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.AspNetCore.Session": "2.2.0",
-          "Microsoft.EntityFrameworkCore": "7.0.10"
+          "Microsoft.EntityFrameworkCore": "7.0.11"
         },
         "compile": {
           "bin/placeholder/Application.dll": {}
@@ -2671,7 +2671,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -2682,6 +2682,15 @@
       "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.1.1 was resolved.",
       "libraryId": "MediatR",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore from 7.0.11 to 7.0.10. Reference the package directly from the project to select a different version. \n Persistance -> Application -> Microsoft.EntityFrameworkCore (>= 7.0.11) \n Persistance -> Microsoft.EntityFrameworkCore (>= 7.0.10)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
       "targetGraphs": [
         "net7.0"
       ]

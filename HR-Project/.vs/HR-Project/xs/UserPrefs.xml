@@ -1,23 +1,39 @@
 ﻿<Properties StartupConfiguration="{68FEF03A-2A16-4202-B106-0A2FBC4FDBE8}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/appsettings.json">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Persistance/Persistance.csproj">
     <Files>
       <File FileName="Core/Application/Exceptions/NotFoundUserException.cs" />
       <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandHandler.cs" />
       <File FileName="Presentation/Presentation/Views/User/SignIn.cshtml" />
       <File FileName="Presentation/Presentation/Controllers/UserController.cs" />
-      <File FileName="Presentation/Presentation/Program.cs" Line="41" Column="47" />
+      <File FileName="Presentation/Presentation/Program.cs" />
       <File FileName="Presentation/Presentation/appsettings.json" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Controllers/EmployeeController.cs" Line="46" Column="10" />
+      <File FileName="Presentation/Presentation/Controllers/JobController.cs" Line="45" Column="10" />
+      <File FileName="Core/Application/CQRS/Queries/Job/GetAllJob/GetAllJobQueryRequest.cs" Line="8" Column="3" />
+      <File FileName="Core/Application/CQRS/Queries/Job/GetAllJob/GetAllJobQueryResponse.cs" Line="6" Column="61" />
+      <File FileName="Core/Application/CQRS/Queries/Job/GetAllJob/GetAllJobQueryHandler.cs" Line="22" Column="1" />
+      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Job/GetJobCQRS.cshtml" Line="18" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Job/GetJob.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Employee/ApplyJob.cshtml" Line="1" Column="1" />
+      <File FileName="Infrastructure/Persistance/Persistance.csproj" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HR-Project" expanded="True">
+          <Node name="HR-Project" expanded="True" selected="True">
             <Node name="Core" expanded="True">
               <Node name="Application" expanded="True">
                 <Node name="CQRS" expanded="True">
-                  <Node name="Commands" expanded="True">
-                    <Node name="User" expanded="True">
-                      <Node name="LoginUser" expanded="True" />
+                  <Node name="Queries" expanded="True">
+                    <Node name="Job" expanded="True">
+                      <Node name="GetAllJob" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
@@ -28,13 +44,9 @@
               <Node name="Presentation" expanded="True">
                 <Node name="Controllers" expanded="True" />
                 <Node name="Views" expanded="True">
-                  <Node name="Admin" expanded="True" />
                   <Node name="Employee" expanded="True" />
                   <Node name="Job" expanded="True" />
-                  <Node name="Shared" expanded="True" />
-                  <Node name="User" expanded="True" />
                 </Node>
-                <Node name="appsettings.json" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -42,11 +54,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uqcZPs/kp5n0EwLAow/N6wJ6KKq5v0e02H9TGEuX0pYLG++OVgFcjv5LgQ6hWo1jJMiufjTHc1KeqDk4zNFKrw==",
+  "dgSpecHash": "apwCEisfOUW58OhcvxwGXwe2Ogt5hF618OD62RHJe+elnruWkGrBg8+E/VK4O9Y4rL4wnRV4R8vrWMyL7hH2cA==",
   "success": true,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/HR-Project/Core/Application/Application.csproj",
   "expectedPackageFiles": [
@@ -25,9 +25,9 @@
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.10/microsoft.aspnetcore.identity.entityframeworkcore.7.0.10.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.session/2.2.0/microsoft.aspnetcore.session.2.2.0.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
-    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.10/microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
-    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.10/microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
-    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.10/microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.11/microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.11/microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.11/microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.10/microsoft.entityframeworkcore.relational.7.0.10.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
