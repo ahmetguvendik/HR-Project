@@ -4,6 +4,8 @@ using Application.CQRS.Commands.Job.JobConfirm;
 using Application.CQRS.Commands.Job.JobReject;
 using Application.CQRS.Commands.Job.RemoveJob;
 using Application.CQRS.Commands.Job.UpdateJob;
+using Application.CQRS.Queries.EmployeeJob.GetAllEmployeeJob;
+using Application.CQRS.Queries.Job.GetAllJob;
 using Application.Repositories;
 using Application.Services;
 using MediatR;
@@ -65,10 +67,10 @@ namespace Presentation.Controllers
             return View(response);
         }
 
-        public IActionResult GetJob()
+        public async Task<IActionResult> GetJob(GetAllJobQueryRequest model)
         {
-            var values = _jobCategoryService.GetJobCategory();
-            return View(values);
+            var response = await _mediator.Send(model);
+            return View(response);
         }
 
         public async Task<IActionResult> RemoveJob(string id)
@@ -108,9 +110,9 @@ namespace Presentation.Controllers
             return RedirectToAction("GetJob","Admin");
         }
 
-        public IActionResult GetEmployeeJob()
+        public async Task<IActionResult> GetEmployeeJob(GetAllEmployeeJobQueryRequest model)
         {
-            var value = _employeeJobService.GetEmployeeJob();
+            var value = await _mediator.Send(model);
             return View(value);
         }
 

@@ -30,6 +30,9 @@
     <None Remove="CQRS\Queries\" />
     <None Remove="CQRS\Queries\Job\" />
     <None Remove="CQRS\Queries\Job\GetAllJob\" />
+    <None Remove="CQRS\Queries\EmployeeJob\" />
+    <None Remove="CQRS\Queries\EmployeeJob\GetAllEmployeeJob\" />
+    <None Remove="CQRS\Queries\Job\GetByIdJob\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -55,6 +58,9 @@
     <Folder Include="CQRS\Queries\" />
     <Folder Include="CQRS\Queries\Job\" />
     <Folder Include="CQRS\Queries\Job\GetAllJob\" />
+    <Folder Include="CQRS\Queries\EmployeeJob\" />
+    <Folder Include="CQRS\Queries\EmployeeJob\GetAllEmployeeJob\" />
+    <Folder Include="CQRS\Queries\Job\GetByIdJob\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

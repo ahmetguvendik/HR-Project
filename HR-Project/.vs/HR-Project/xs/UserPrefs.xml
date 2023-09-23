@@ -5,47 +5,65 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Persistance/Persistance.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Controllers/JobController.cs">
     <Files>
       <File FileName="Core/Application/Exceptions/NotFoundUserException.cs" />
       <File FileName="Core/Application/CQRS/Commands/User/LoginUser/LoginUserCommandHandler.cs" />
       <File FileName="Presentation/Presentation/Views/User/SignIn.cshtml" />
       <File FileName="Presentation/Presentation/Controllers/UserController.cs" />
       <File FileName="Presentation/Presentation/Program.cs" />
-      <File FileName="Presentation/Presentation/appsettings.json" Line="1" Column="1" />
-      <File FileName="Presentation/Presentation/Controllers/EmployeeController.cs" Line="46" Column="10" />
-      <File FileName="Presentation/Presentation/Controllers/JobController.cs" Line="45" Column="10" />
-      <File FileName="Core/Application/CQRS/Queries/Job/GetAllJob/GetAllJobQueryRequest.cs" Line="8" Column="3" />
-      <File FileName="Core/Application/CQRS/Queries/Job/GetAllJob/GetAllJobQueryResponse.cs" Line="6" Column="61" />
-      <File FileName="Core/Application/CQRS/Queries/Job/GetAllJob/GetAllJobQueryHandler.cs" Line="22" Column="1" />
-      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/appsettings.json" />
+      <File FileName="Presentation/Presentation/Controllers/EmployeeController.cs" Line="45" Column="32" />
+      <File FileName="Presentation/Presentation/Controllers/JobController.cs" Line="38" Column="53" />
+      <File FileName="Core/Application/CQRS/Queries/Job/GetAllJob/GetAllJobQueryRequest.cs" Line="7" Column="36" />
+      <File FileName="Core/Application/CQRS/Queries/Job/GetAllJob/GetAllJobQueryHandler.cs" Line="19" Column="22" />
+      <File FileName="Presentation/Presentation/Controllers/AdminController.cs" Line="70" Column="70" />
       <File FileName="Presentation/Presentation/Views/Job/GetJobCQRS.cshtml" Line="18" Column="1" />
       <File FileName="Presentation/Presentation/Views/Job/GetJob.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Presentation/Views/Employee/ApplyJob.cshtml" Line="1" Column="1" />
-      <File FileName="Infrastructure/Persistance/Persistance.csproj" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Employee/ApplyJob.cshtml" />
+      <File FileName="Infrastructure/Persistance/Persistance.csproj" Line="26" Column="86" />
+      <File FileName="Presentation/Presentation/Views/Admin/GetJob.cshtml" Line="26" Column="9" />
+      <File FileName="Presentation/Presentation/Views/Employee/GetApplication.cshtml" Line="12" Column="10" />
+      <File FileName="Infrastructure/Persistance/Services/JobCategoryService.cs" Line="1" Column="1" />
+      <File FileName="Core/Application/CQRS/Queries/EmployeeJob/GetAllEmployeeJob/GetAllEmployeeJobQueryRequest.cs" Line="9" Column="3" />
+      <File FileName="Core/Application/CQRS/Queries/EmployeeJob/GetAllEmployeeJob/GetAllEmployeeJobQueryHandler.cs" Line="16" Column="22" />
+      <File FileName="Core/Application/CQRS/Queries/Job/GetByIdJob/GetByIdJobQueryRequest.cs" Line="8" Column="33" />
+      <File FileName="Core/Application/CQRS/Queries/Job/GetByIdJob/GetByIdJobQueryHandler.cs" Line="18" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HR-Project" expanded="True" selected="True">
+          <Node name="HR-Project" expanded="True">
             <Node name="Core" expanded="True">
               <Node name="Application" expanded="True">
                 <Node name="CQRS" expanded="True">
                   <Node name="Queries" expanded="True">
+                    <Node name="EmployeeJob" expanded="True">
+                      <Node name="GetAllEmployeeJob" expanded="True" />
+                    </Node>
                     <Node name="Job" expanded="True">
-                      <Node name="GetAllJob" expanded="True" />
+                      <Node name="GetByIdJob" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
-                <Node name="Exceptions" expanded="True" />
+                <Node name="ViewModels" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Infrastructure" expanded="True">
+              <Node name="Persistance" expanded="True">
+                <Node name="Services" expanded="True" />
               </Node>
             </Node>
             <Node name="Presentation" expanded="True">
               <Node name="Presentation" expanded="True">
-                <Node name="Controllers" expanded="True" />
+                <Node name="Controllers" expanded="True">
+                  <Node name="JobController.cs" selected="True" />
+                </Node>
                 <Node name="Views" expanded="True">
+                  <Node name="Admin" expanded="True" />
                   <Node name="Employee" expanded="True" />
                   <Node name="Job" expanded="True" />
+                  <Node name="User" expanded="True" />
                 </Node>
               </Node>
             </Node>

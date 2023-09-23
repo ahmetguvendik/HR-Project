@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.CQRS.Queries.Job.GetAllJob;
+using Application.CQRS.Queries.Job.GetByIdJob;
 using Application.Repositories;
 using Application.Services;
 using MediatR;
@@ -26,15 +27,15 @@ namespace Presentation.Controllers
             _jobReadRepository = jobReadRepository;
             _mediator = mediator;
         }
-        public IActionResult GetJob()
+        public async Task<IActionResult> GetJob(GetAllJobQueryRequest model)
         {
-            var values = _jobCategoryService.GetJobCategory();
+            var values = await _mediator.Send(model);
             return View(values);
         }
 
-        public async Task<IActionResult> JobDetail(string id)
+        public async Task<IActionResult> JobDetail(GetByIdJobQueryRequest model)
         {
-            var value = await _jobReadRepository.GetById(id);
+            var value = await _mediator.Send(model);
             return View(value);
         }
 
